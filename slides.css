@@ -1,0 +1,86 @@
+/* slides.css */
+
+/* General slide styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+/* Navigation styles */
+#slide-nav {
+  margin-top: 1em;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  background-color: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-item.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.nav-item.active-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Audio container styles */
+#audio-container {
+  margin-top: 1em;
+}
+
+/* Quiz styles */
+#quiz {
+  margin-top: 1em;
+}
+
+#quiz p {
+  font-weight: bold;
+}
+
+#quiz button {
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#quiz button:hover {
+  opacity: 0.8;
+}
+
+#quiz button:focus {
+  outline: none;
+}

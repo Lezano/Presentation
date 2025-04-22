@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Musik Präsentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+  <div class="sidebar">
+    <h3>Inhalt</h3>
+    <ul>
+      <li class="slide-item active" onclick="loadSlide('slides/01-intro.html', this)">Einleitung</li>
+      <li class="slide-item" onclick="loadSlide('slides/02-wav.html', this)">WAV-Dateien</li>
+      <li class="slide-item" onclick="loadSlide('slides/03-mp3.html', this)">MP3-Dateien</li>
+      <li class="slide-item" onclick="loadSlide('slides/04-vergleich.html', this)">WAV vs MP3</li>
+      <li class="slide-item" onclick="loadSlide('slides/05-ad.html', this)">AD-Wandlung</li>
+      <li class="slide-item" onclick="loadSlide('slides/06-da.html', this)">DA-Wandlung</li>
+      <li class="slide-item" onclick="loadSlide('slides/07-fazit.html', this)">Fazit</li>
+      <li class="slide-item" onclick="loadSlide('slides/08-fragen.html', this)">Fragen</li>
+    </ul>
+  </div>
+  <iframe id="slide-frame" src="slides/01-intro.html"></iframe>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
