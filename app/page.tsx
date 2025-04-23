@@ -190,9 +190,10 @@ export default function Presentation() {
             <TabsContent value="da" className="space-y-4 pt-4">
               <h3 className="text-xl font-semibold">Digital → Analog</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Digitale Werte werden zurück in ein analoges Signal gewandelt</li>
-                <li>Wichtige Rolle in Lautsprechern, Kopfhörern & Audiogeräten</li>
-                <li>Beispiel: Wiedergabe einer MP3-Datei → Umwandlung durch DA-Wandler</li>
+                <li>Von digital (Binärcode) zu analogen Signal (Ton)</li>
+                <li>Findet man in: Lautsprechern, Kopfhörern & Audiogeräten</li>
+                <li>Digital-Analog-Wandler (DAC)</li>
+                <li>Beispiel an Musikhören</li>
               </ul>
               <div className="mt-4">
                 <DAConverter />
@@ -265,11 +266,11 @@ export default function Presentation() {
               <h3 className="text-xl font-semibold">Aufbau eines 8-Bit-DA-Wandlers</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Wie ein digitales Signal in eine Spannung umgewandelt wird</li>
-                    <li>R-2R Leiter-Netzwerk</li>
-                    <li>Vergleich zu modernen Wandlern (16- oder 24-Bit)</li>
-                    <li>Moderne Wandler: bis zu 16,8 Millionen Stufen (24-Bit)</li>
+                  <ul className="list-disc pl-6 space-y-2">                    
+                    <li>Anz. möglicher Spannungswerten -&gt; Anz. Bits</li>
+                    <li>2<sup>8</sup> = 256</li>
+                    <li>8-Bit DA-Wandler veraltet</li>
+                    <li>Vergleich zu modernen Wandlern (16- oder 24-, 32-Bit)</li>
                   </ul>
                 </div>
                 <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
@@ -278,25 +279,30 @@ export default function Presentation() {
                     <thead>
                       <tr>
                         <th className="text-left">Bit-Tiefe</th>
-                        <th className="text-right">Stufen</th>
-                        <th className="text-right">Dynamikbereich</th>
+                        <th className="text-right">mögliche Spannugswerte</th>
+                        <th className="text-right">möglicher Preis</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>8-Bit</td>
-                        <td className="text-right">256</td>
-                        <td className="text-right">48 dB</td>
+                        <td className="text-right">256</td>                        
+                        <td className="text-right">2,--€</td>
                       </tr>
                       <tr>
-                        <td>16-Bit (CD)</td>
+                        <td>16-Bit</td>
                         <td className="text-right">65.536</td>
-                        <td className="text-right">96 dB</td>
+                        <td className="text-right">3 bis 14,-- €</td>
                       </tr>
                       <tr>
-                        <td>24-Bit (Studio)</td>
+                        <td>24-Bit</td>
                         <td className="text-right">16,8 Mio.</td>
-                        <td className="text-right">144 dB</td>
+                        <td className="text-right">2,--€</td>
+                      </tr>
+                      <tr>
+                        <td>32-Bit</td>
+                        <td className="text-right">4.3 Mrd.</td>
+                        <td className="text-right">45,99€</td>
                       </tr>
                     </tbody>
                   </table>
@@ -342,8 +348,8 @@ export default function Presentation() {
 
           <div className="mt-8 p-6 bg-blue-50 border border-blue-200 rounded-lg text-center">
             <h3 className="text-xl font-semibold mb-2">Fragerunde</h3>
-            <p>Vielen Dank für Ihre Aufmerksamkeit!</p>
-            <p className="mt-2">Haben Sie Fragen?</p>
+            <p>Vielen Dank für eure Aufmerksamkeit!</p>
+            <p className="mt-2">Habt ihr Fragen?</p>
           </div>
         </div>
       ),
