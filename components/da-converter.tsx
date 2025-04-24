@@ -137,6 +137,6 @@ export default function DAConverter() {
           <Slider value={[bitDepth]} min={2} max={8} step={1} onValueChange={(values) => setBitDepth(values[0])} />
         </div>
       </div>
-    </div>
+    </div> 
   )
 }
