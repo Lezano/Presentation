@@ -18,7 +18,7 @@ export default function Presentation() {
   const [volume, setVolume] = useState(80)
   const [activeTab, setActiveTab] = useState("wav")
 
-  const totalSlides = 5
+  const totalSlides = 6
 
   // Stop audio playback when changing slides
   useEffect(() => {
@@ -350,6 +350,24 @@ export default function Presentation() {
             <h3 className="text-xl font-semibold mb-2">Fragerunde</h3>
             <p>Vielen Dank für eure Aufmerksamkeit!</p>
             <p className="mt-2">Habt ihr Fragen?</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "Source",
+      title: "Quellen",
+      presenter: "Leon & Deniel",
+      duration: 0,
+      content: (
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-center">Quellen</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">              
+                <li><a href='https://www.tutorialspoint.com/difference-between-wav-and-mp3'>https://www.tutorialspoint.com/difference-between-wav-and-mp3</a></li><br></br>
+                <li><a href='https://praxistipps.chip.de/unterschied-von-wav-und-mp3-was-ist-geeigneter-wofuer_49409'>https://praxistipps.chip.de/unterschied-von-wav-und-mp3-was-ist-geeigneter-wofuer_49409</a></li><br></br>
+                <li><a href='https://chrishoermann.at/analog-digital-wandlung-digital-analog-wandlung/'>https://chrishoermann.at/analog-digital-wandlung-digital-analog-wandlung/</a></li><br></br>
+                <li><a href="https://www.rohm.de/electronics-basics/da-converters/da_what1">https://www.rohm.de/electronics-basics/da-converters/da_what1</a></li><br></br>
+                <li><a href="https://auto.suzuki.de/beratung-kauf/autolexikon/m/mp3">https://auto.suzuki.de/beratung-kauf/autolexikon/m/mp3</a></li><br></br>
           </div>
         </div>
       ),
